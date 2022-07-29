@@ -8,8 +8,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 @NgModule({
   declarations: [AppComponent, NxWelcomeComponent],
   imports: [
-    BrowserModule,
-    FormsModule,
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent],
