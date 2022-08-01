@@ -8,6 +8,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { FormsModule } from '@angular/forms';
 import { UsernameResetComponent } from './username-reset/username-reset.component';
+import { DetailsToggleComponent } from './details-toggle/details-toggle.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { UsernameResetComponent } from './username-reset/username-reset.componen
     WarningAlertComponent,
     SuccessAlertComponent,
     UsernameResetComponent,
+    DetailsToggleComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

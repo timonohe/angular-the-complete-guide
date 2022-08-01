@@ -1,0 +1,15 @@
+<button
+  class="btn btn-primary"
+  (click)="toggleDetails()">
+  Display Details
+</button>
+<p *ngIf="showDetails">
+  Secret Password is 'tuna'
+</p>
+
+<p
+  *ngFor="let log of clickLogger; let logIndex = index"
+  [ngStyle]="{backgroundColor: logIndex >= 5 ? 'blue' : 'transparent' }"
+  [ngClass]="{'white-text': logIndex >= 5}">
+  {{ log | json }}
+</p>
