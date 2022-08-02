@@ -1,7 +1,7 @@
 {
   "projectType": "application",
   "sourceRoot": "apps/course-project/src",
-  "prefix": "angular-the-complete-guide",
+  "prefix": "course-project",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
