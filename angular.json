@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "components-databinding-deepdive": "apps/components-databinding-deepdive",
+    "components-databinding-deepdive-e2e": "apps/components-databinding-deepdive-e2e",
     "course-project": "apps/course-project",
     "course-project-e2e": "apps/course-project-e2e",
     "my-first-app": "apps/my-first-app",
