@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'cdd-server-element',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./server-element.component.scss'],
 })
 export class ServerElementComponent implements OnInit {
+  @Input() element: {type: string, name: string, content: string};
+
   constructor() {}
 
   ngOnInit(): void {}
