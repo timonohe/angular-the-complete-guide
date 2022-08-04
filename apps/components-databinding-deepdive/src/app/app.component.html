@@ -1,5 +1,8 @@
 <div class="container">
-  <cdd-cockpit></cdd-cockpit>
+  <cdd-cockpit
+    (serverCreated)="onServerAdded($event)"
+    (blueprintCreated)="onBlueprintAdded($event)">
+  </cdd-cockpit>
   <hr>
   <div class="row">
     <div class="col-xs-12">
