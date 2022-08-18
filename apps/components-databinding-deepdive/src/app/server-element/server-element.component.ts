@@ -1,9 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'cdd-server-element',
   templateUrl: './server-element.component.html',
   styleUrls: ['./server-element.component.scss'],
+  encapsulation: ViewEncapsulation.Emulated // None, Native
 })
 export class ServerElementComponent implements OnInit {
   // eslint-disable-next-line @angular-eslint/no-input-rename
