@@ -9,23 +9,23 @@ export class CockpitComponent implements OnInit {
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   // eslint-disable-next-line @angular-eslint/no-output-rename
   @Output('bpCreated') blueprintCreated = new EventEmitter<{serverName: string, serverContent: string}>();;
-  newServerName = '';
+  // newServerName = '';
   newServerContent = '';
 
   constructor() {}
 
   ngOnInit(): void {}
 
-  onAddServer(): void {
+  onAddServer(nameInput: HTMLInputElement): void {
     this.serverCreated.emit({
-      serverName: this.newServerName,
+      serverName: nameInput.value,
       serverContent: this.newServerContent
     });
   }
 
-  onAddBlueprint(): void {
+  onAddBlueprint(nameInput: HTMLInputElement): void {
     this.blueprintCreated.emit({
-      serverName: this.newServerName,
+      serverName: nameInput.value,
       serverContent: this.newServerContent
     });
   }
