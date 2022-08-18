@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'cdd-cockpit',
@@ -10,7 +10,9 @@ export class CockpitComponent implements OnInit {
   // eslint-disable-next-line @angular-eslint/no-output-rename
   @Output('bpCreated') blueprintCreated = new EventEmitter<{serverName: string, serverContent: string}>();;
   // newServerName = '';
-  newServerContent = '';
+  // newServerContent = '';
+
+  @ViewChild('serverContentInput') serverContentInput: ElementRef;
 
   constructor() {}
 
@@ -19,14 +21,14 @@ export class CockpitComponent implements OnInit {
   onAddServer(nameInput: HTMLInputElement): void {
     this.serverCreated.emit({
       serverName: nameInput.value,
-      serverContent: this.newServerContent
+      serverContent: this.serverContentInput.nativeElement.value
     });
   }
 
   onAddBlueprint(nameInput: HTMLInputElement): void {
     this.blueprintCreated.emit({
       serverName: nameInput.value,
-      serverContent: this.newServerContent
+      serverContent: this.serverContentInput.nativeElement.value
     });
   }
 }
