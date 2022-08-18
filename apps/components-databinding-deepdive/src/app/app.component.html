@@ -8,7 +8,12 @@
     <div class="col-xs-12">
       <cdd-server-element
         *ngFor="let server of serverElements"
-        [srvElement]="server"></cdd-server-element>
+        [srvElement]="server">
+        <p>
+          <strong *ngIf="server.type === 'server'" style="color: red">{{ server.content }}</strong>
+          <em *ngIf="server.type === 'blueprint'">{{ server.content }}</em>
+        </p>
+      </cdd-server-element>
     </div>
   </div>
 </div>
