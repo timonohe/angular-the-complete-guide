@@ -1,10 +1,10 @@
-<course-project-header></course-project-header>
+<course-project-header (featureSelected)="onNavigate($event)"></course-project-header>
 
 <div class="container">
   <div class="row">
     <div class="col-md-12">
-      <course-project-recipes></course-project-recipes>
-      <course-project-shopping-list></course-project-shopping-list>
+      <course-project-recipes *ngIf="loadedFeature === 'recipe'"></course-project-recipes>
+      <course-project-shopping-list *ngIf="loadedFeature !== 'recipe'"></course-project-shopping-list>
     </div>
   </div>
 </div>
