@@ -9,6 +9,9 @@ import { SuccessAlertComponent } from './success-alert/success-alert.component';
 import { FormsModule } from '@angular/forms';
 import { UsernameResetComponent } from './username-reset/username-reset.component';
 import { DetailsToggleComponent } from './details-toggle/details-toggle.component';
+import { GameControlComponent } from './assignment-4/game-control/game-control.component';
+import { EvenNumberComponent } from './assignment-4/even-number/even-number.component';
+import { OddNumberComponent } from './assignment-4/odd-number/odd-number.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { DetailsToggleComponent } from './details-toggle/details-toggle.componen
     SuccessAlertComponent,
     UsernameResetComponent,
     DetailsToggleComponent,
+    GameControlComponent,
+    EvenNumberComponent,
+    OddNumberComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

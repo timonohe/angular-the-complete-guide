@@ -11,4 +11,14 @@ import { Component } from '@angular/core';
   `]
 })
 export class AppComponent {
+  even: number[] = [];
+  odd: number[] = [];
+
+  onGameCounterIncrease(counter: number): void {
+    if (counter % 2 === 0) {
+      this.even.push(counter);
+    } else {
+      this.odd.push(counter);
+    }
+  }
 }

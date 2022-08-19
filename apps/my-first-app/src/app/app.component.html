@@ -16,6 +16,10 @@
       <hr>
       <h3>Assignment 3: Practicing Directives</h3>
       <app-details-toggle></app-details-toggle>
+      <h3>Assignment 4: Practicing Property & Event Binding and View Encapsulation</h3>
+      <app-game-control (counterIncrementEvent)="onGameCounterIncrease($event)"></app-game-control>
+      <app-even-number *ngFor="let evenNumber of even" [number]="evenNumber"></app-even-number>
+      <app-odd-number *ngFor="let oddNumber of odd" [number]="oddNumber"></app-odd-number>
     </div>
   </div>
 </div>
