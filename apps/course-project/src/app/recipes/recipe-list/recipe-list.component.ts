@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Recipe } from '../recipe.model';
 
 @Component({
@@ -6,7 +6,7 @@ import { Recipe } from '../recipe.model';
   templateUrl: './recipe-list.component.html',
   styleUrls: ['./recipe-list.component.scss'],
 })
-export class RecipeListComponent implements OnInit {
+export class RecipeListComponent {
   recipes: Recipe[] = [];
 
   constructor() {
@@ -23,6 +23,4 @@ export class RecipeListComponent implements OnInit {
       }
     ]
   }
-
-  ngOnInit(): void {}
 }
