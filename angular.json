@@ -9,6 +9,8 @@
     "directives-deep-dive": "apps/directives-deep-dive",
     "directives-deep-dive-e2e": "apps/directives-deep-dive-e2e",
     "my-first-app": "apps/my-first-app",
-    "my-first-app-e2e": "apps/my-first-app-e2e"
+    "my-first-app-e2e": "apps/my-first-app-e2e",
+    "services-showcase": "apps/services-showcase",
+    "services-showcase-e2e": "apps/services-showcase-e2e"
   }
 }
