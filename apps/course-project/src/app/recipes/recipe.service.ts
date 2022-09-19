@@ -6,14 +6,22 @@ export class RecipeService {
 
   private recipes: Recipe[] = [
     {
-      name: 'A Test Recipe',
-      description: 'This is simply a test',
-      imagePath: 'https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg'
+      name: 'Tasty Schnitzel',
+      description: 'A super-tasty Schnitzel - just awesome!',
+      imagePath: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Schnitzel.JPG',
+      ingredients: [
+        { name: 'Meat', amount: 1 },
+        { name: 'French Fries', amount: 20 }
+      ]
     },
     {
-      name: 'Another Test Recipe',
-      description: 'This is simply a test',
-      imagePath: 'https://cdn.pixabay.com/photo/2016/06/15/19/09/food-1459693_960_720.jpg'
+      name: 'Big Fat Bu rger',
+      description: 'What else you need to say?',
+      imagePath: 'https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg',
+      ingredients: [
+        { name: 'Buns', amount: 2 },
+        { name: 'Meat', amount: 1 }
+      ]
     }
   ];
 
