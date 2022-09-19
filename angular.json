@@ -3,14 +3,9 @@
   "version": 2,
   "projects": {
     "components-databinding-deepdive": "apps/components-databinding-deepdive",
-    "components-databinding-deepdive-e2e": "apps/components-databinding-deepdive-e2e",
     "course-project": "apps/course-project",
-    "course-project-e2e": "apps/course-project-e2e",
     "directives-deep-dive": "apps/directives-deep-dive",
-    "directives-deep-dive-e2e": "apps/directives-deep-dive-e2e",
     "my-first-app": "apps/my-first-app",
-    "my-first-app-e2e": "apps/my-first-app-e2e",
-    "services-showcase": "apps/services-showcase",
-    "services-showcase-e2e": "apps/services-showcase-e2e"
+    "services-showcase": "apps/services-showcase"
   }
 }
