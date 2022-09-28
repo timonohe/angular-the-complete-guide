@@ -20,7 +20,7 @@ export class RecipeService {
       ]
     },
     {
-      name: 'Big Fat Bu rger',
+      name: 'Big Fat Burger',
       description: 'What else you need to say?',
       imagePath: 'https://upload.wikimedia.org/wikipedia/commons/b/be/Burger_King_Angus_Bacon_%26_Cheese_Steak_Burger.jpg',
       ingredients: [
