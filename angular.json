@@ -6,6 +6,7 @@
     "course-project": "apps/course-project",
     "directives-deep-dive": "apps/directives-deep-dive",
     "my-first-app": "apps/my-first-app",
+    "observables-showcase": "apps/observables-showcase",
     "routing-showcase": "apps/routing-showcase",
     "services-showcase": "apps/services-showcase"
   }
