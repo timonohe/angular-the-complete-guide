@@ -8,6 +8,7 @@
     "my-first-app": "apps/my-first-app",
     "observables-showcase": "apps/observables-showcase",
     "routing-showcase": "apps/routing-showcase",
-    "services-showcase": "apps/services-showcase"
+    "services-showcase": "apps/services-showcase",
+    "template-driven-forms": "apps/template-driven-forms"
   }
 }

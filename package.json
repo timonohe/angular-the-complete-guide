@@ -13,6 +13,7 @@
     "services-showcase:start": "nx run services-showcase:serve",
     "routing-showcase:start": "nx run routing-showcase:serve",
     "observables-showcase:start": "nx run observables-showcase:serve",
+    "template-driven-forms:start": "nx run template-driven-forms:serve",
     "build": "nx build",
     "test": "nx test"
   },
