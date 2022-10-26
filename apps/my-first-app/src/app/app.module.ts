@@ -15,6 +15,7 @@ import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { ActiveUsersComponent } from './assignment-5/active-users/active-users.component';
 import { InactiveUsersComponent } from './assignment-5/inactive-users/inactive-users.component';
 import { AssignmentFiveControlComponent } from './assignment-5/assignment-five-control/assignment-five-control.component';
+import { TemplateDriveFormsAssignmentComponent } from './assignment-6/template-drive-forms-assignment/template-drive-forms-assignment.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AssignmentFiveControlComponent } from './assignment-5/assignment-five-c
     ActiveUsersComponent,
     InactiveUsersComponent,
     AssignmentFiveControlComponent,
+    TemplateDriveFormsAssignmentComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
