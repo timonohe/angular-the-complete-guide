@@ -7,6 +7,7 @@
     "directives-deep-dive": "apps/directives-deep-dive",
     "my-first-app": "apps/my-first-app",
     "observables-showcase": "apps/observables-showcase",
+    "reactive-forms": "apps/reactive-forms",
     "routing-showcase": "apps/routing-showcase",
     "services-showcase": "apps/services-showcase",
     "template-driven-forms": "apps/template-driven-forms"

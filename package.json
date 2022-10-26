@@ -14,6 +14,7 @@
     "routing-showcase:start": "nx run routing-showcase:serve",
     "observables-showcase:start": "nx run observables-showcase:serve",
     "template-driven-forms:start": "nx run template-driven-forms:serve",
+    "reactive-forms:start": "nx run reactive-forms:serve",
     "build": "nx build",
     "test": "nx test"
   },
