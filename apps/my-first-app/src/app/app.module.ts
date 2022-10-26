@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { EvenNumberComponent } from './assignment-4/even-number/even-number.component';
 import { GameControlComponent } from './assignment-4/game-control/game-control.component';
@@ -16,6 +16,7 @@ import { ActiveUsersComponent } from './assignment-5/active-users/active-users.c
 import { InactiveUsersComponent } from './assignment-5/inactive-users/inactive-users.component';
 import { AssignmentFiveControlComponent } from './assignment-5/assignment-five-control/assignment-five-control.component';
 import { TemplateDriveFormsAssignmentComponent } from './assignment-6/template-drive-forms-assignment/template-drive-forms-assignment.component';
+import { ReactiveFormsAssignmentComponent } from './assignment-7/reactive-forms-assignment/reactive-forms-assignment.component';
 
 @NgModule({
   declarations: [
@@ -33,8 +34,9 @@ import { TemplateDriveFormsAssignmentComponent } from './assignment-6/template-d
     InactiveUsersComponent,
     AssignmentFiveControlComponent,
     TemplateDriveFormsAssignmentComponent,
+    ReactiveFormsAssignmentComponent,
   ],
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
