@@ -1,6 +1,6 @@
-import { HttpClient, HttpHeaders, HttpParams } from "@angular/common/http";
+import { HttpClient, HttpEventType, HttpHeaders, HttpParams } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { catchError, map, Observable, Subject, throwError } from "rxjs";
+import { catchError, map, Observable, Subject, tap, throwError } from "rxjs";
 import { Post } from "./post.model";
 
 @Injectable({ providedIn: 'root' })
@@ -14,9 +14,12 @@ export class PostsService {
     return this.http
     .post<{ name: string }>(
       'https://ng-complete-guide-e8f36-default-rtdb.europe-west1.firebasedatabase.app/posts.json',
-      postData
+      postData,
+      {
+        observe: 'response'
+      }
     ).subscribe({
-      next: post => console.log(post),
+      next: post => console.log(post.body),
       error: error => this.error.next(error.message)
     });
   }
@@ -51,6 +54,23 @@ export class PostsService {
 
   deletePosts() {
     return this.http
-      .delete('https://ng-complete-guide-e8f36-default-rtdb.europe-west1.firebasedatabase.app/posts.json');
+      .delete(
+        'https://ng-complete-guide-e8f36-default-rtdb.europe-west1.firebasedatabase.app/posts.json',
+        {
+          observe: 'events'
+        }
+      )
+      .pipe(
+        tap(event => {
+          console.log(event);
+          if (event.type === HttpEventType.Sent) {
+            // Update something in the UI
+          }
+
+          if (event.type === HttpEventType.Response) {
+            console.log(event.body);
+          }
+        })
+      );
   }
 }
