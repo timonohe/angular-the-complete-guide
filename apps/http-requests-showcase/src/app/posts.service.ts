@@ -9,14 +9,11 @@ export class PostsService {
 
   createAndStorePost(title: string, content: string) {
     const postData: Post = { title, content };
-    this.http
+    return this.http
     .post<{ name: string }>(
       'https://ng-complete-guide-e8f36-default-rtdb.europe-west1.firebasedatabase.app/posts.json',
       postData
-    )
-    .subscribe(responseData => {
-      console.log(responseData);
-    });
+    );
   }
 
   fetchPosts(): Observable<Post[]> {
@@ -31,5 +28,10 @@ export class PostsService {
           return postsArray;
         })
       );
+  }
+
+  deletePosts() {
+    return this.http
+      .delete('https://ng-complete-guide-e8f36-default-rtdb.europe-west1.firebasedatabase.app/posts.json');
   }
 }
