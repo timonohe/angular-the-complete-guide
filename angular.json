@@ -5,6 +5,7 @@
     "components-databinding-deepdive": "apps/components-databinding-deepdive",
     "course-project": "apps/course-project",
     "directives-deep-dive": "apps/directives-deep-dive",
+    "http-requests-showcase": "apps/http-requests-showcase",
     "my-first-app": "apps/my-first-app",
     "observables-showcase": "apps/observables-showcase",
     "pipes-showcase": "apps/pipes-showcase",

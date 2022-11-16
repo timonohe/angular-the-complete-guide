@@ -16,6 +16,7 @@
     "template-driven-forms:start": "nx run template-driven-forms:serve",
     "reactive-forms:start": "nx run reactive-forms:serve",
     "pipes-showcase:start": "nx run pipes-showcase:serve",
+    "http-requests-showcase:start": "nx run http-requests-showcase:serve",
     "build": "nx build",
     "test": "nx test"
   },
