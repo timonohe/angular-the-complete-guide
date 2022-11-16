@@ -1,6 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
-import { map } from "rxjs";
+import { map, Observable } from "rxjs";
 import { Post } from "./post.model";
 
 @Injectable({ providedIn: 'root' })
@@ -19,8 +19,8 @@ export class PostsService {
     });
   }
 
-  fetchPosts() {
-    this.http
+  fetchPosts(): Observable<Post[]> {
+    return this.http
       .get<{ [key: string]: Post }>('https://ng-complete-guide-e8f36-default-rtdb.europe-west1.firebasedatabase.app/posts.json')
       .pipe(
         map(responseData => {
@@ -30,7 +30,6 @@ export class PostsService {
           }
           return postsArray;
         })
-      )
-      .subscribe(posts => {});
+      );
   }
 }
