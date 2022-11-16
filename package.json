@@ -15,6 +15,7 @@
     "observables-showcase:start": "nx run observables-showcase:serve",
     "template-driven-forms:start": "nx run template-driven-forms:serve",
     "reactive-forms:start": "nx run reactive-forms:serve",
+    "pipes-showcase:start": "nx run pipes-showcase:serve",
     "build": "nx build",
     "test": "nx test"
   },
