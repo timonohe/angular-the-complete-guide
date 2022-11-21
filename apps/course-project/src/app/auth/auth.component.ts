@@ -5,6 +5,9 @@ import { Component } from "@angular/core";
   templateUrl: './auth.component.html'
 })
 export class AuthComponent {
+  loginMode: 'login' | 'signUp' = 'login';
 
-
+  onSwitchMode() {
+    this.loginMode === 'login' ? this.loginMode = 'signUp' : this.loginMode = 'login';
+  }
 }
