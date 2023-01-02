@@ -24,17 +24,10 @@ export class DataStorageService {
   }
 
   fetchRecipes() {
-    return this.authService.user.pipe(
-      take(1),
-      exhaustMap(user => {
-        return this.http
-        .get<Recipe[]>(
-          'https://ng-course-recipe-book-e8fd7-default-rtdb.europe-west1.firebasedatabase.app/recipes.json',
-          {
-            params: new HttpParams().set('auth', user.token)
-          }
-        )
-      }),
+    return this.http
+      .get<Recipe[]>(
+        'https://ng-course-recipe-book-e8fd7-default-rtdb.europe-west1.firebasedatabase.app/recipes.json',
+      ).pipe(
       map(recipes => {
         return recipes.map(recipe => {
           return {
@@ -46,6 +39,6 @@ export class DataStorageService {
       tap(recipes => {
         this.recipeService.setRecipes(recipes)
       })
-    );
+    )
   }
 }
