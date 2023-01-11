@@ -3,7 +3,7 @@
     <!-- <div class="alert alert-danger" *ngIf="error && !isLoading">
       <p>{{error}}</p>
     </div> -->
-    <course-project-alert [message]="error" *ngIf="error && !isLoading"></course-project-alert>
+    <course-project-alert [message]="error" *ngIf="error && !isLoading" (closeAlert)="onHandleError()"></course-project-alert>
     <div *ngIf="isLoading" style="text-align: center;">
       <course-project-loading-spinner></course-project-loading-spinner>
     </div>
