@@ -6,7 +6,7 @@ import { ShoppingListService } from "./shopping-list/shopping-list.service";
 @NgModule({
   providers: [
     ShoppingListService,
-    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true }
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptorService, multi: true },
   ]
 })
 export class CoreModule { }
