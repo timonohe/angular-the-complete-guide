@@ -18,6 +18,7 @@
     "reactive-forms:start": "nx run reactive-forms:serve",
     "pipes-showcase:start": "nx run pipes-showcase:serve",
     "http-requests-showcase:start": "nx run http-requests-showcase:serve",
+    "standalone-components-preview:start": "nx run standalone-components-preview:serve",
     "build": "nx build",
     "test": "nx test"
   },

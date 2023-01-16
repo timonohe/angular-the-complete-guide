@@ -12,6 +12,7 @@
     "reactive-forms": "apps/reactive-forms",
     "routing-showcase": "apps/routing-showcase",
     "services-showcase": "apps/services-showcase",
+    "standalone-components-preview": "apps/standalone-components-preview",
     "template-driven-forms": "apps/template-driven-forms"
   }
 }
