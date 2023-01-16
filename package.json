@@ -8,6 +8,7 @@
     "start": "nx serve",
     "my-first-app:start": "nx run my-first-app:serve",
     "course-project:start": "nx run course-project:serve",
+    "course-project:build": "nx run course-project:build",
     "components-databinding-deepdive:start": "nx run components-databinding-deepdive:serve",
     "directives-deep-dive:start": "nx run directives-deep-dive:serve",
     "services-showcase:start": "nx run services-showcase:serve",
