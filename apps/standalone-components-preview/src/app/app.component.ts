@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 @Component({
-  selector: 'angular-the-complete-guide-root',
+  standalone: true,
+  selector: 'standalone-components-preview-root',
+  imports: [WelcomeComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
