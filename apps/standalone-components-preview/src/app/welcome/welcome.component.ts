@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
+import { DetailsComponent } from './details/details.component';
 
 @Component({
-  // imports: [DetailsComponent],
+  standalone: true,
+  imports: [DetailsComponent],
   selector: 'standalone-components-preview-welcome',
   templateUrl: './welcome.component.html'
 })
