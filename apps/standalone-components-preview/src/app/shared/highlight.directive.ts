@@ -1,6 +1,7 @@
 import { Directive, ElementRef } from '@angular/core';
 
 @Directive({
+  standalone: true,
   selector: '[standaloneComponentsPreviewHighlight]',
 })
 export class HighlightDirective {
