@@ -1,4 +1,6 @@
 {
+  "name": "pipes-showcase",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/pipes-showcase/src",
   "prefix": "angular-the-complete-guide",
@@ -85,7 +87,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/pipes-showcase"],
+      "outputs": ["{workspaceRoot}/coverage/apps/pipes-showcase"],
       "options": {
         "jestConfig": "apps/pipes-showcase/jest.config.ts",
         "passWithNoTests": true

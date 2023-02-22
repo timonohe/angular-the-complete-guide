@@ -1,4 +1,6 @@
 {
+  "name": "course-project",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/course-project/src",
   "prefix": "course-project",
@@ -85,7 +87,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/course-project"],
+      "outputs": ["{workspaceRoot}/coverage/apps/course-project"],
       "options": {
         "jestConfig": "apps/course-project/jest.config.ts",
         "passWithNoTests": true

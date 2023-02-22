@@ -1,4 +1,6 @@
 {
+  "name": "template-driven-forms",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/template-driven-forms/src",
   "prefix": "angular-the-complete-guide",
@@ -85,7 +87,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/template-driven-forms"],
+      "outputs": ["{workspaceRoot}/coverage/apps/template-driven-forms"],
       "options": {
         "jestConfig": "apps/template-driven-forms/jest.config.ts",
         "passWithNoTests": true

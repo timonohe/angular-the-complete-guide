@@ -1,4 +1,6 @@
 {
+  "name": "observables-showcase",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/observables-showcase/src",
   "prefix": "observables-showcase",
@@ -85,7 +87,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/observables-showcase"],
+      "outputs": ["{workspaceRoot}/coverage/apps/observables-showcase"],
       "options": {
         "jestConfig": "apps/observables-showcase/jest.config.ts",
         "passWithNoTests": true

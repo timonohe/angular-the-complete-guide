@@ -1,4 +1,6 @@
 {
+  "name": "http-requests-showcase",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/http-requests-showcase/src",
   "prefix": "angular-the-complete-guide",
@@ -85,7 +87,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/http-requests-showcase"],
+      "outputs": ["{workspaceRoot}/coverage/apps/http-requests-showcase"],
       "options": {
         "jestConfig": "apps/http-requests-showcase/jest.config.ts",
         "passWithNoTests": true

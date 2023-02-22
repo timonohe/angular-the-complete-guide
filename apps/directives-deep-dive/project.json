@@ -1,4 +1,6 @@
 {
+  "name": "directives-deep-dive",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/directives-deep-dive/src",
   "prefix": "directives-deep-dive",
@@ -85,7 +87,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/directives-deep-dive"],
+      "outputs": ["{workspaceRoot}/coverage/apps/directives-deep-dive"],
       "options": {
         "jestConfig": "apps/directives-deep-dive/jest.config.ts",
         "passWithNoTests": true

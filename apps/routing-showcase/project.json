@@ -1,4 +1,6 @@
 {
+  "name": "routing-showcase",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/routing-showcase/src",
   "prefix": "routing-showcase",
@@ -85,7 +87,7 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/routing-showcase"],
+      "outputs": ["{workspaceRoot}/coverage/apps/routing-showcase"],
       "options": {
         "jestConfig": "apps/routing-showcase/jest.config.ts",
         "passWithNoTests": true

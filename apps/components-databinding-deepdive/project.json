@@ -1,4 +1,6 @@
 {
+  "name": "components-databinding-deepdive",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "sourceRoot": "apps/components-databinding-deepdive/src",
   "prefix": "cdd",
@@ -85,7 +87,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/components-databinding-deepdive"],
+      "outputs": [
+        "{workspaceRoot}/coverage/apps/components-databinding-deepdive"
+      ],
       "options": {
         "jestConfig": "apps/components-databinding-deepdive/jest.config.ts",
         "passWithNoTests": true
