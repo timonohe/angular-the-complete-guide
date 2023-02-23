@@ -10,16 +10,13 @@ import { LoggingService } from './logging.service';
 import { SharedModule } from './shared/shared.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     HttpClientModule,
     AppRoutingModule,
     SharedModule,
-    CoreModule
+    CoreModule,
   ],
   bootstrap: [AppComponent],
   // providers: [LoggingService]
